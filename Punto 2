@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+main()
+{
+	char palabra[50],letra,i;
+	int cont=0,longitud,vocales;
+	printf("Ingrese Palabra: ");
+	scanf("%s",&palabra);
+	longitud = strlen(palabra);
+	for (i=0;i<longitud;i++)
+	{
+		letra = palabra[cont];
+		cont++;
+		if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u')
+		{
+			vocales++;
+		}
+	}
+	printf("Hay %d letras \n", longitud);
+	printf("Hay %d vocales \n", vocales);
+}
