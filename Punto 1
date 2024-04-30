@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	char nombre[50],apellido[50];
+	printf("Ingrese Nombre: ");
+	scanf ("%s",&nombre);
+	printf("Ingrese Apellido: ");
+	scanf ("%s",&apellido);
+	printf("%s %s",nombre,apellido);
+}
