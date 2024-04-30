@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+main()
+{
+	char palabra[50],reves,aux[50],letra,i;
+	int cont=0,longitud,vocales,si=0;
+	printf("Ingrese Palabra: ");
+	scanf("%s",&palabra);
+	longitud = strlen(palabra);
+	cont = longitud-1;
+	for (i=0;i<longitud;i++)
+	{
+		reves = palabra[cont];
+		cont--;
+		if (reves == palabra[i])
+		{
+			si++;
+		}
+	}
+	if (si == longitud)
+	{
+		printf("Es palindromo\n");
+	}
+	else
+	{
+		printf("No es palindromo\n");
+	}
+}
