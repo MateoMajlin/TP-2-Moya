@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	int i,longitud,cont=0;
+	char palabra[50];
+	char ini,mod;
+	printf("Ingrese palabra: ");
+	scanf ("%s",&palabra[i]);
+	longitud=strlen(palabra);
+	printf("ingrese letra a modificar: ");
+	scanf("\n%c",&ini);
+	printf("ingrese por cual modificarla: ");
+	scanf("\n%c",&mod);
+	for(i=0;i<longitud;i++)
+	{
+		if (palabra[cont] == ini)
+		{
+			palabra[cont] = mod;
+		}
+		printf("%c",palabra[cont]);
+		cont++;
+	}
+}
